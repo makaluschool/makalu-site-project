@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MenuIcon } from 'lucide-react';
+import { CircleX, CrossIcon, GanttChart, MenuIcon } from 'lucide-react';
 
 const Drawerbtn = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Drawerbtn = () => {
   return (
     <div>
       <button onClick={toggleDrawer} className="text-blue-800 hover:text-blue-600">
-        <MenuIcon className="w-6 h-6" />
+        <GanttChart className="w-10 h-10" />
       </button>
       <div
         className={`fixed inset-0 z-50 transition-opacity duration-300 ${
@@ -27,7 +27,7 @@ const Drawerbtn = () => {
         >
           <div className="p-4">
             <button onClick={toggleDrawer} className="text-blue-800 hover:text-blue-600 float-right">
-              <MenuIcon className="w-6 h-6" />
+              <CircleX className="w-6 h-6" />
             </button>
             <div className="mt-8">
               <h2 className="text-lg font-semibold">Drawer Title</h2>
