@@ -11,11 +11,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export function Banner() {
+export function Banner(data:any) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
-
+ 
+ console.log(data.data)
+ 
   return (
     <div className="flex justify-center">
       <Carousel
@@ -25,14 +27,16 @@ export function Banner() {
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          { data?.data.map((d:any, index:any) => (
             <CarouselItem key={index}>
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex items-center justify-center p-6  h-[70vh]">
-                    <span className="text-4xl font-semibold">a</span>
-                  </CardContent>
-                </Card>
+              <div className="p-1 "style={{backgroundImage:`url(http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url})`,backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
+                <div className=" bg-white/5 backdrop-blur-sm">
+                  <div className="flex items-center justify-center  h-[75vh]">
+                    <div className="title">
+                    <h3 className="text-4xl font-semibold text-white">{d.attributes.Banner_title}</h3>
+                    </div>
+                  </div>
+                </div>
               </div>
             </CarouselItem>
           ))}
