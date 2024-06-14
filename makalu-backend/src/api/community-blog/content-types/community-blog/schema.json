@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_blogs",
+  "info": {
+    "singularName": "community-blog",
+    "pluralName": "community-blogs",
+    "displayName": "community_blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "community_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "community_title": {
+      "type": "string"
+    }
+  }
+}

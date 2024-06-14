@@ -15,18 +15,18 @@ const Nav = () => {
         <Toptipnav />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:p-5">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-8">
           <Link href={"/"} className="flex items-center">
             <img
-              className="h-8 w-auto"
+              className="h-14 w-auto"
               src="/images/makalu-logo.jpg"
               alt="Makalu Logo"
             />
-            <span className="font-semibold text-xl text-blue-800 ml-2 md:text-2xl lg:text-3xl ">
+            <span className="font-semibold text-xl text-blue-800 ml-2 md:text-xl lg:text-2xl ">
               Makalu English Boarding School
             </span>
           </Link>
-          <div className="hidden md:flex items-center space-x-8 text-lg text-blue-800 ">
+          <div className="hidden md:flex items-center space-x-8 text-md text-blue-800 ">
             <Link
               href="/admission"
               className="text-blue-800 hover:text-blue-600 font-semibold "

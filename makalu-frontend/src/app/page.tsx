@@ -1,4 +1,6 @@
-import { Banner } from "@/components/Home/Main/Banner";
+import { Banner } from "@/components/Home/Banner";
+import Community from "@/components/Home/Community";
+import NumberBanner from "@/components/Home/NumberBanner";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 
@@ -8,7 +10,8 @@ export default async function Home() {
   return (
     <div className="">
       <Banner data={getBannerData.data.data} />
-      
+      <NumberBanner />
+      <Community />
     </div>
   );
 }
