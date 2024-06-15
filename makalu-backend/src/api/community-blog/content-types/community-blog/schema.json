@@ -4,14 +4,43 @@
   "info": {
     "singularName": "community-blog",
     "pluralName": "community-blogs",
-    "displayName": "community_blog"
+    "displayName": "community_blog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "community_image": {
+    "blog_thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blog_title": {
+      "type": "string"
+    },
+    "blog_content": {
+      "type": "text"
+    },
+    "blog_cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "blog_content_image": {
       "allowedTypes": [
         "images",
         "files",
@@ -20,9 +49,6 @@
       ],
       "type": "media",
       "multiple": true
-    },
-    "community_title": {
-      "type": "string"
     }
   }
 }

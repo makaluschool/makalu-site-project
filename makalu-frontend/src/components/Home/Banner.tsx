@@ -11,15 +11,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export function Banner(data:any) {
+export function Banner(data: any) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
- 
- console.log(data.data)
- 
+
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center m-2">
       <Carousel
         plugins={[plugin.current]}
         className="w-[98%]"
@@ -27,29 +25,38 @@ export function Banner(data:any) {
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          { data?.data.map((d:any, index:any) => (
+          {data?.data.map((d: any, index: any) => (
             <CarouselItem key={index}>
-              <div className="w-full "style={{backgroundImage:`url(http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url})`,backgroundSize:"cover",backgroundPosition:"center",backgroundRepeat:"no-repeat"}}>
+              <Card
+                className="w-full "
+                style={{
+                  backgroundImage: `url(http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
                 <div className=" ">
                   <div className="flex items-center justify-center  h-[75vh]">
                     <div className="title">
-                    <h3 className="text-4xl font-semibold text-white">{d.attributes.Banner_title}</h3>
+                      <h3 className="text-4xl font-semibold text-white">
+                        {d.attributes.Banner_title}
+                      </h3>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
         <div className="btn ml-20">
-        <div className="previosbtn absolute">
-        <CarouselPrevious />
+          <div className="previosbtn absolute">
+            <CarouselPrevious />
+          </div>
+          <div className="nextbtn absolute">
+            <CarouselNext />
+          </div>
         </div>
-        <div className="nextbtn absolute">
-        <CarouselNext />
-        </div>
-        </div>
-      
       </Carousel>
     </div>
   );
