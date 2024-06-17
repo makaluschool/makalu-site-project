@@ -17,18 +17,18 @@ export function Banner(data: any) {
   );
 
   return (
-    <div className="flex justify-center m-2">
+    <div className="flex justify-center w-full z-50 md:mt-28">
       <Carousel
         plugins={[plugin.current]}
-        className="w-[98%]"
+        className="w-[100%]  h-[98vh] mb-10"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
           {data?.data.map((d: any, index: any) => (
             <CarouselItem key={index}>
-              <Card
-                className="w-full "
+              <div
+                className="w-full h-[95vh] rounded-lg "
                 style={{
                   backgroundImage: `url(http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url})`,
                   backgroundSize: "cover",
@@ -45,7 +45,7 @@ export function Banner(data: any) {
                     </div>
                   </div>
                 </div>
-              </Card>
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>

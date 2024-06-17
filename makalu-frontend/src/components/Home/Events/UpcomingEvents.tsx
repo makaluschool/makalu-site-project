@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 
 const UpcomingEvents = () => {
   return (
-    <div className="bg-gray-100 p-10 m-5 rounded-lg">
-      <div className=" m-20">
-        <div className="titile flex justify-between ">
+    <div className="bg-gray-100 p-10 m-5 mt-10 rounded-lg">
+      <div className="">
+        <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
             <h1 className="font-[300]">
               UPCOMING <span className="font-bold text-blue-600">EVENTS</span>
             </h1>
-            <span className="text-blue-500 self-center font-bold">
+            <span className="text-blue-500 hidden sm:block self-center font-bold">
               <ChevronsDown fontFamily="600" fontSize={"1.5rem"} />
             </span>
           </div>

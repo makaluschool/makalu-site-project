@@ -13,13 +13,14 @@ export default async function Home() {
   const getCommunityData = await axios.get("http://localhost:1337/api/community-blogs?populate[0]=blog_thumbnail&populate[1]=blog_cover_image");
  
   return (
-    <div className="">
+    <div className=" ">
       <Banner data={getBannerData.data.data} />
       <NumberBanner />
       <CommunityBlogs data={getCommunityData.data.data} />
       <UpcomingEvents />
       <Aboutus />
       <MessageCarosel />
+     
     </div>
   );
 }

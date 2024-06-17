@@ -10,11 +10,11 @@ const Nav = () => {
   /*  const [user, setuser] = useState<user>({name:"sohan"});
   console.log(user) */
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-10 ">
       <div className="topnav hidden lg:block">
         <Toptipnav />
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 p-5 lg:px-8 md:p-5">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-6 p-5 lg:px-8 md:p-5">
         <div className="flex justify-between h-8">
           <Link href={"/"} className="flex items-center">
             <img
@@ -22,7 +22,7 @@ const Nav = () => {
               src="/images/makalu-logo.jpg"
               alt="Makalu Logo"
             />
-            <span className="font-semibold text-md text-blue-800 ml-2 md:text-lg lg:text-xl ">
+            <span className="font-semibold text-md text-blue-800 ml-2 md:text-lg lg:text-2xl ">
               Makalu English Boarding School
             </span>
           </Link>
@@ -34,22 +34,22 @@ const Nav = () => {
               ADMISSION
             </Link>
             <Link
-              href="/inquire"
+              href="/gallery"
               className="text-blue-800 hover:text-blue-600"
             >
-              INQUIRE
+              Gallery
             </Link>
             <Link
-              href="/apply"
+              href="/blog"
               className="text-blue-800 hover:text-blue-600"
             >
-              APPLY
+              Blog
             </Link>
             <Link
-              href="/give"
+              href="/contact"
               className="text-blue-800 hover:text-blue-600 font-semibold"
             >
-              GIVE
+              Contact
             </Link>
             <Drawerbtn />
           </div>
