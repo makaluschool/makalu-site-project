@@ -12,7 +12,7 @@ const Footer = () => {
             <rect x="14" y="1" width="7" height="6"></rect>
             <rect x="14" y="11" width="7" height="12"></rect>
           </svg>
-          <span className="ml-2 text-xl font-bold tracking-wide text-white p-2 rounded-sm bg-blue-600">Makalu English Boarding School</span>
+          <span className="ml-2 text-xl font-bold tracking-wide   rounded-sm ">Makalu English Boarding School</span>
         </a>
         <div className="mt-6 lg:max-w-sm">
           <p className="text-sm text-gray-800">
