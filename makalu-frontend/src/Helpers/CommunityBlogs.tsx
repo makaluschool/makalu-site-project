@@ -19,7 +19,7 @@ const CommunityBlogs = ({ data }: any) => {
                  School Blog
                 </h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                Explore the world of education and learning with our insightful blog posts at Makalu Engineering Boarding School.
+                Explore the world of education and learning with our insightful blog posts at Makalu English Boarding School.
                 </p>
               </div>
               <div className="div grid grid-col-1 lg:grid-cols-3 w-full mx-auto mt-8  max-w-2xl auto-rows-fr gap-3   sm:mt-12 lg:mx-0 lg:max-w-none ">
