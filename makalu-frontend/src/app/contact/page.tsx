@@ -1,3 +1,4 @@
+import GoogleMap from '@/components/Map'
 import PageBanner from '@/components/PageBanner'
 import React from 'react'
 
@@ -40,6 +41,7 @@ const page = () => {
           </div>
           <button type="submit" className="w-full bg-blue-700 text-white py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors">Send Message</button>
         </form>
+        <GoogleMap />
       </section>
      
      

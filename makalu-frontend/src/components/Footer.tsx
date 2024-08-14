@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -5,15 +6,16 @@ const Footer = () => {
     <div><div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="sm:col-span-2">
-        <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
-          <svg className="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-            <rect x="3" y="1" width="7" height="12"></rect>
-            <rect x="3" y="17" width="7" height="6"></rect>
-            <rect x="14" y="1" width="7" height="6"></rect>
-            <rect x="14" y="11" width="7" height="12"></rect>
-          </svg>
-          <span className="ml-2 text-xl font-bold tracking-wide   rounded-sm ">Makalu English Boarding School</span>
-        </a>
+      <Link href={"/"} className="flex items-center">
+            <img
+              className="h-8 sm:h-8 lg:h-12 w-auto"
+              src="/images/makalu-logo.jpg"
+              alt="Makalu Logo"
+            />
+            <span className="font-semibold text-md text-black ml-2 md:text-lg lg:text-2xl ">
+              Makalu English Boarding School
+            </span>
+          </Link>
         <div className="mt-6 lg:max-w-sm">
           <p className="text-sm text-gray-800">
             The school of learning and crafting the new era of information and knowledge.
