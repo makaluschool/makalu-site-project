@@ -10,7 +10,6 @@ const Nav = () => {
   /*  const [user, setuser] = useState<user>({name:"sohan"});
   console.log(user) */
   const [isScrolled, setIsScrolled] = useState(false);
-  console.log(isScrolled)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {

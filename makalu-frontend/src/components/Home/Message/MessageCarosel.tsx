@@ -9,18 +9,19 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Message from "./Message";
+import { MessageData } from "@/lib/MessageData";
 
 export function MessageCarosel() {
   return (
     <div className="flex justify-center m-5">
       <Carousel className="w-[100%]">
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
+          {MessageData.map((data, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
                 <Card>
                   <CardContent className="p-10 ">
-                    <Message />
+                    <Message data={data} />
                   </CardContent>
                 </Card>
               </div>

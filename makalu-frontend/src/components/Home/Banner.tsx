@@ -17,7 +17,7 @@ export function Banner(data: any) {
   );
 
   return (
-    <div className="flex justify-center w-full z-50 md:mt-28">
+    <div className="flex justify-center w-full z-50 md:mt-20">
       <Carousel
         plugins={[plugin.current]}
         className="w-[100%]  h-[98vh] mb-10"
