@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Community = ({ data }: any) => {
+const Community = ({ data,index }: any) => {
   const isoDate = data.createdAt;
   const date = new Date(isoDate);
 
@@ -14,9 +14,11 @@ const Community = ({ data }: any) => {
   const formattedDate = date.toLocaleDateString("en-GB", options);
 
   // Output: 15 June 2024
+  let animateBlog = ["flip-left","fade-up","flip-right"]
 
   return (
-    <div className=" transform transition duration-500 hover:scale-105  lg:w-[21rem] lg:ml-[3rem] ">
+    <div data-aos={animateBlog[index]} className="div">
+    <div  className="transform transition duration-500 hover:scale-105  lg:w-[21rem] lg:ml-[3rem] ">
       <article className=" relative isolate flex flex-col justify-end overflow-hidden rounded-3xl  bg-gray-900 dark:bg-gray-700 px-6 py-6 pb-8 pt-80 sm:pt-48 lg:pt-80">
         <img
           src={`http://localhost:1337${data.blog_thumbnail.data.attributes.url}`}
@@ -37,6 +39,7 @@ const Community = ({ data }: any) => {
           </Link>
         </h3>
       </article>
+    </div>
     </div>
   );
 };

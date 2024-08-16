@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Blogpostdata = ({ data }: any) => {
-  console.log(data);
+
   return (
     <div className="">
       <div className="max-w-7xl mx-auto my-8 px-1 w-[28rem] ">

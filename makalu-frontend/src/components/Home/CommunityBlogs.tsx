@@ -23,8 +23,8 @@ const CommunityBlogs = ({ data }: any) => {
                 </p>
               </div>
               <div className="div grid grid-col-1 lg:grid-cols-3 w-full mx-auto mt-8  max-w-2xl auto-rows-fr gap-3   sm:mt-12 lg:mx-0 lg:max-w-none ">
-                {data.map((item: any) => (
-                  <Community key={item.id} data={item.attributes} />
+                {data.map((item: any,index:number) => (
+                  <Community key={item.id} data={item.attributes} index={index} />
                 ))}
               </div>
               

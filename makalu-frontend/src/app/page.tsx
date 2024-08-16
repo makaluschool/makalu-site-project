@@ -1,7 +1,7 @@
-import CommunityBlogs from "@/Helpers/CommunityBlogs";
 import Aboutus from "@/components/Home/Aboutus";
 import { Banner } from "@/components/Home/Banner";
 import Community from "@/components/Home/Community";
+import CommunityBlogs from "@/components/Home/CommunityBlogs";
 import UpcomingEvents from "@/components/Home/Events/UpcomingEvents";
 import { MessageCarosel } from "@/components/Home/Message/MessageCarosel";
 import NumberBanner from "@/components/Home/NumberBanner";

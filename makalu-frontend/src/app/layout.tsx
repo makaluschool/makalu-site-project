@@ -3,6 +3,7 @@ import { Montserrat, Nunito, Roboto, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Home/Navbar/Nav";
 import Footer from "@/components/Footer";
+import { AOSInit } from "@/lib/aos";
 
 const montserrat = Roboto_Slab({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <AOSInit />
       <body className={montserrat.className}>
         <div className="nav">
           <Nav />
