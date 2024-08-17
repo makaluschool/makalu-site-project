@@ -70,8 +70,10 @@ const Nav = () => {
               Contact
             </Link>
             <Link
-              href="/contact"
+              href="/#faq"
+              scroll={false} 
               className="text-blue-800 hover:text-blue-600 font-semibold"
+              onClick={()=> document.getElementById("faq")?.scrollIntoView({behavior:"smooth"})}
             >
               FAQ
             </Link>

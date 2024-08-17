@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Message from "./Message";
-import { MessageData } from "@/lib/MessageData";
+import { MessageData } from "@/lib/Data/MessageData";
 
 export function MessageCarosel() {
   return (

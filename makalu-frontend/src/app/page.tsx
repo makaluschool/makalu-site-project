@@ -3,6 +3,7 @@ import { Banner } from "@/components/Home/Banner";
 import Community from "@/components/Home/Community";
 import CommunityBlogs from "@/components/Home/CommunityBlogs";
 import UpcomingEvents from "@/components/Home/Events/UpcomingEvents";
+import FAQ from "@/components/Home/FAQ";
 import { MessageCarosel } from "@/components/Home/Message/MessageCarosel";
 import NumberBanner from "@/components/Home/NumberBanner";
 import { Button } from "@/components/ui/button";
@@ -20,7 +21,7 @@ export default async function Home() {
       <UpcomingEvents />
       <Aboutus />
       <MessageCarosel />
-     
+      <FAQ  />
     </div>
   );
 }
