@@ -45,10 +45,10 @@ const Nav = () => {
           </Link>
           <div className="hidden md:flex items-center space-x-8 text-[12px] lg:text-[14px] font-bold">
             <Link
-              href="/admission"
+              href="/"
               className="text-blue-800 hover:text-blue-600 "
             >
-              ADMISSION
+              Home
             </Link>
             <Link
               href="/gallery"
@@ -56,17 +56,24 @@ const Nav = () => {
             >
               Gallery
             </Link>
+            
             <Link
               href="/blog"
               className="text-blue-800 hover:text-blue-600"
             >
-              Blog
+              Blogs
             </Link>
             <Link
               href="/contact"
               className="text-blue-800 hover:text-blue-600 font-semibold"
             >
               Contact
+            </Link>
+            <Link
+              href="/contact"
+              className="text-blue-800 hover:text-blue-600 font-semibold"
+            >
+              FAQ
             </Link>
             <Drawerbtn />
           </div>
