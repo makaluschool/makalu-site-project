@@ -4,7 +4,6 @@ import { Clock10Icon } from "lucide-react";
 import React from "react";
 
 const DisplayEvents = ({ data }: any) => {
-  console.log(data);
   if (data.length === 0)
     return <div className="bg-white m-5 p-10">No events</div>;
   return (
