@@ -3,7 +3,7 @@ import React from "react";
 import DisplayEvents from "./DisplayEvents";
 import { Button } from "@/components/ui/button";
 
-const UpcomingEvents = () => {
+const UpcomingEvents = ({data}:any) => {
   return (
     <div className="bg-gray-100 p-10 m-5 mt-10 rounded-lg">
       <div className="">
@@ -21,7 +21,7 @@ const UpcomingEvents = () => {
           </div>
         </div>
         <div className="display event">
-          <DisplayEvents />
+          <DisplayEvents data = {data}/>
         </div>
       </div>
     </div>

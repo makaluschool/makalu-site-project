@@ -884,6 +884,41 @@ export interface ApiHomeBannerHomeBanner extends Schema.CollectionType {
   };
 }
 
+export interface ApiUpcomingEventUpcomingEvent extends Schema.CollectionType {
+  collectionName: 'upcoming_events';
+  info: {
+    singularName: 'upcoming-event';
+    pluralName: 'upcoming-events';
+    displayName: 'Upcoming Event';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Event_title: Attribute.String;
+    Event_desc: Attribute.Text;
+    Event_date: Attribute.Date;
+    From_event_time: Attribute.Time;
+    To_event_time: Attribute.Time;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::upcoming-event.upcoming-event',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::upcoming-event.upcoming-event',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -905,6 +940,7 @@ declare module '@strapi/types' {
       'api::community-blog.community-blog': ApiCommunityBlogCommunityBlog;
       'api::gallery.gallery': ApiGalleryGallery;
       'api::home-banner.home-banner': ApiHomeBannerHomeBanner;
+      'api::upcoming-event.upcoming-event': ApiUpcomingEventUpcomingEvent;
     }
   }
 }

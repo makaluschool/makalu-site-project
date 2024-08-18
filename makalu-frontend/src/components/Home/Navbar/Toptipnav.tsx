@@ -3,7 +3,7 @@ import React from "react";
 
 const Toptipnav = () => {
   return (
-    <div className="bg-blue-500 p-1 flex justify-between">
+    <div className="bg-blue-800 p-[0.3rem] flex justify-between">
       
     </div>
   );

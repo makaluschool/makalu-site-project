@@ -12,13 +12,13 @@ import axios from "axios";
 export default async function Home() {
   const getBannerData = await axios.get("http://localhost:1337/api/home-banners?populate[0]=Banner_image");
   const getCommunityblogData = await axios.get("http://localhost:1337/api/community-blogs?populate[0]=blog_thumbnail&populate[1]=blog_cover_image");
- 
+  const getEventsData = await axios.get("http://localhost:1337/api/upcoming-events");
   return (
     <div className=" ">
       <Banner data={getBannerData.data.data} />
       <NumberBanner />
       <CommunityBlogs data={getCommunityblogData.data.data} />
-      <UpcomingEvents />
+      <UpcomingEvents data={getEventsData.data.data} />
       <Aboutus />
       <MessageCarosel />
       <FAQ  />
