@@ -4,6 +4,8 @@ import { CircleArrowRight, CircleChevronRight } from "lucide-react";
 import React from "react";
 
 const CommunityBlogs = ({ data }: any) => {
+  const filterData = data.filter((item: any, index: number) => index < 3);
+  
   return (
     <div>
       <div className="sm:m-10 sm:p-10">
@@ -23,7 +25,7 @@ const CommunityBlogs = ({ data }: any) => {
                 </p>
               </div>
               <div className="div grid grid-col-1 lg:grid-cols-3 w-full mx-auto mt-8  max-w-2xl auto-rows-fr gap-3   sm:mt-12 lg:mx-0 lg:max-w-none ">
-                {data.map((item: any,index:number) => (
+                {filterData.map((item: any,index:number) => (
                   <Community key={item.id} data={item.attributes} index={index} />
                 ))}
               </div>

@@ -6,7 +6,7 @@ import PageBanner from '../PageBanner'
 const Blogpost = ({data}:any) => {
   return (
     <>  <PageBanner name={"Blogs"} />
-   <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3 flex-wrap '>
+   <div className='grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 flex-wrap '>
     {data.map((d:any, index:number) => (
         <Blogpostdata key={index}  data={d.attributes} />
     ))}
