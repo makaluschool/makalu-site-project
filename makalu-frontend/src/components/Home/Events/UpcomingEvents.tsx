@@ -10,9 +10,9 @@ const UpcomingEvents = ({data}:any) => {
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
             <h1 className="font-[300]">
-              UPCOMING <span className="font-bold text-blue-600">EVENTS</span>
+              UPCOMING <span className="font-bold text-blue-800">EVENTS</span>
             </h1>
-            <span className="text-blue-500 hidden sm:block self-center font-bold">
+            <span className="text-yellow-500 hidden sm:block self-center font-bold">
               <ChevronsDown fontFamily="600" fontSize={"1.5rem"} />
             </span>
           </div>

@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export function Banner(data: any) {
   const plugin = React.useRef(
@@ -27,24 +28,8 @@ export function Banner(data: any) {
         <CarouselContent>
           {data?.data.map((d: any, index: any) => (
             <CarouselItem key={index}>
-              <div
-                className="w-full h-[95vh] rounded-lg "
-                style={{
-                  backgroundImage: `url(http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <div className=" ">
-                  <div className="flex items-center justify-center  h-[75vh]">
-                    <div className="title">
-                      <h3 className="text-4xl font-semibold text-white">
-                        {d.attributes.Banner_title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
+              <div className=" mt-10 flex justify-center ">
+                <Image src={`http://localhost:1337${d.attributes.Banner_image.data[0].attributes.url}`} alt="banner" width={1820} height={700} className="" objectFit="contain"  />
               </div>
             </CarouselItem>
           ))}

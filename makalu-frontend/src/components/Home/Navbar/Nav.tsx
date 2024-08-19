@@ -27,7 +27,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className={`bg-white  fixed top-0 left-0 right-0 z-10 ${isScrolled ? 'shadow-md' : ''} `}>
+    <nav className={`bg-white  fixed top-0 left-0 right-0 z-10 shadow-md `}>
       <div className="topnav hidden lg:block">
         <Toptipnav />
       </div>
@@ -39,7 +39,7 @@ const Nav = () => {
               src="/images/makalu-logo.jpg"
               alt="Makalu Logo"
             />
-            <span className="font-semibold text-md text-blue-800 ml-2 md:text-lg lg:text-2xl ">
+            <span className="font-bold text-md text-blue-800 ml-2 md:text-lg lg:text-2xl ">
               Makalu English Boarding School
             </span>
           </Link>

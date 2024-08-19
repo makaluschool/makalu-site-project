@@ -859,12 +859,12 @@ export interface ApiHomeBannerHomeBanner extends Schema.CollectionType {
     singularName: 'home-banner';
     pluralName: 'home-banners';
     displayName: 'Home_Banner';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Banner_title: Attribute.String;
     Banner_image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

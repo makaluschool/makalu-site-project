@@ -9,7 +9,7 @@ const page = async() => {
   return (
     <div className="container ">
       <PageBanner name='Gallery'/>
-      <div className=" mx-auto p-5 mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+      <div className=" mx-auto p-5 mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 " data-aos="fade-up" >
         {images.map((src:any, index:number) => (
           <div key={index} className="overflow-hidden mb-4  rounded-lg">
             <img

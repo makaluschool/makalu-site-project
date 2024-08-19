@@ -4,25 +4,24 @@
   "info": {
     "singularName": "home-banner",
     "pluralName": "home-banners",
-    "displayName": "Home_Banner"
+    "displayName": "Home_Banner",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Banner_title": {
-      "type": "string"
-    },
     "Banner_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

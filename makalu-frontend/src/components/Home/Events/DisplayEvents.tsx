@@ -12,9 +12,9 @@ const DisplayEvents = ({ data }: any) => {
         const fromtime = FormatTime(d.attributes.From_event_time);
         const totime = FormatTime(d.attributes.To_event_time);
         return (
-        <div key={index} className="hover:text-blue-600 cursor-pointer p-5 mb-5 bg-white rounded-md">
+        <div key={index} className="hover:text-yellow-500 cursor-pointer p-5 mb-5 bg-white rounded-md">
           <div className="for-date">
-            <h3 className="text-lg  mb-1">
+            <h3 className="text-lg  mb-1 ">
               Events Date:<span className="text-md pl-1 font-semibold">{d.attributes.Event_date}</span>{" "}
             </h3>
           </div>
