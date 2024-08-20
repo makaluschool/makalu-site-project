@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 const NumberBanner = () => {
   return (
-    <div data-aos="fade-up" className='bg-gray-100 m-14 p-5 rounded-lg flex flex-col text-center mt-10 '>
+    <div data-aos="fade-up" className='bg-gray-100 m-14 p-5 rounded-lg flex flex-col text-center mt-[1rem] md:mt-[-2rem]  '>
         <div className="title mt-5">
             <h4 className='font-semibold'>Our 5+ years of</h4>
             <h2 className='font-bold text-3xl'>Hardwork & Achievements</h2>
