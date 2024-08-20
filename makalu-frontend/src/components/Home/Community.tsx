@@ -33,7 +33,7 @@ const Community = ({ data,index }: any) => {
           </time>
         </div>
         <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-          <Link href="/tech-blog/post1">
+          <Link href={`/blog/${data.blog_title}`}>
             <span className="absolute inset-0"></span>
             {data.blog_title}
           </Link>
