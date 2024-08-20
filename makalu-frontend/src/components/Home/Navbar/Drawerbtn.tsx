@@ -43,6 +43,33 @@ const Drawerbtn = () => {
               <CircleX className="w-6 h-6" />
             </button>
             <div className="mt-8 ">
+              <div className="md:hidden">
+            <Link href={"/"} className="">
+                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+              Home
+                </h1>
+              </Link>
+              <Link href={"/gallery"} className="">
+                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                  Gallery
+                </h1>
+              </Link>
+              <Link href={"/blog"} className="">
+                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                  Blogs
+                </h1>
+              </Link>
+              <Link href={"/contact"} className="">
+                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                  Contact
+                </h1>
+              </Link>
+              </div>
+            <Link href={"/about"} className="">
+                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                  About Us
+                </h1>
+              </Link>
               <Link href={"/admission"} className="">
                 <h1 className="text-xl   hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2">
                   Admission
@@ -58,11 +85,7 @@ const Drawerbtn = () => {
                   Faculty and Staff
                 </h1>
               </Link>
-              <Link href={"/careers"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Careers
-                </h1>
-              </Link>
+             
             </div>
           </div>
         </div>

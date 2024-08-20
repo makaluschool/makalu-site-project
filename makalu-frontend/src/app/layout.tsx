@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <AOSInit />
-      <body className={`${montserrat.className} bg-gray-50`}>
+      <body className={`${montserrat.className} `}>
         <div className="nav">
           <Nav />
         </div>
