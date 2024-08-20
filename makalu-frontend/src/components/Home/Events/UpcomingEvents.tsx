@@ -2,6 +2,7 @@ import { ChevronsDown } from "lucide-react";
 import React from "react";
 import DisplayEvents from "./DisplayEvents";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const UpcomingEvents = ({data}:any) => {
   return (
@@ -10,14 +11,14 @@ const UpcomingEvents = ({data}:any) => {
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
             <h1 className="font-[300]">
-              UPCOMING <span className="font-bold text-blue-800">EVENTS</span>
+             {data.length} UPCOMING <span className="font-bold text-blue-800">EVENTS</span>
             </h1>
             <span className="text-yellow-500 hidden sm:block self-center font-bold">
               <ChevronsDown fontFamily="600" fontSize={"1.5rem"} />
             </span>
           </div>
           <div className="viewallbtn transform transition duration-300 ease-in-out scale-100 active:scale-95">
-            <Button className="bg-blue-700 hover:bg-blue-600 text-white">View all Events</Button>
+            <Link href={`/events`}><Button className="bg-blue-700 hover:bg-blue-600 text-white">View all Events</Button></Link>
           </div>
         </div>
         <div className="display event">
