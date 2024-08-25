@@ -21,7 +21,7 @@ const Community = ({ data,index }: any) => {
     <div  className="transform transition duration-500 hover:scale-105  lg:w-[21rem] lg:ml-[3rem] ">
       <article className=" relative isolate flex flex-col justify-end overflow-hidden rounded-3xl  bg-gray-900 dark:bg-gray-700 px-6 py-6 pb-8 pt-80 sm:pt-48 lg:pt-80">
         <img
-          src={`http://localhost:1337${data.blog_thumbnail.data.attributes.url}`}
+          src={`http://localhost:1337${data.blog_thumbnail.data?.attributes.url}`}
           alt="image"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />

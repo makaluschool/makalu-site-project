@@ -39,16 +39,6 @@
         "videos",
         "audios"
       ]
-    },
-    "blog_content_image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
     }
   }
 }
