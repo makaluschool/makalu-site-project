@@ -8,15 +8,15 @@ const NumberBanner = () => {
         </div>
         <div className="display-data m-2 p-5 flex flex-col sm:flex-row md:justify-around mt-10 w-full whitespace-wrap gap-2">
             <div data-aos="fade-left" className="md:pl-8 md:pr-8 md:transition ease-in-out duration-500 transform scale-100 active:scale-110 md:cursor-pointer rounded-xl hover:bg-gray-200 p-3 m-2 ">
-                <h2 className="value text-blue-700 font-bold text-xl lg:text-2xl md:whitespace-nowrap">30,000+</h2>
+                <h2 className="value text-blue-800 font-bold text-xl lg:text-2xl md:whitespace-nowrap">30,000+</h2>
                 <h4 className='font-semibold text-lg'>Students Enrolled</h4>
             </div>
             <div data-aos="fade-up" className="md:pl-8 md:pr-8 md:transition ease-in-out duration-500 transform scale-100 active:scale-110 md:cursor-pointer rounded-xl hover:bg-gray-200 p-3 m-2">
-                <h2 className="value text-blue-700 font-bold text-xl lg:text-2xl md:whitespace-nowrap" >25+</h2>
+                <h2 className="value text-blue-800 font-bold text-xl lg:text-2xl md:whitespace-nowrap" >25+</h2>
                 <h4 className='font-semibold text-lg'>Teaching Staffs</h4>
             </div>
             <div data-aos="fade-right" className="md:pl-8 md:pr-8 md:transition ease-in-out duration-500 transform scale-100 active:scale-110 md:cursor-pointer rounded-xl hover:bg-gray-200 p-3 m-2">
-                <h2 className="value text-blue-700 font-bold text-xl lg:text-2xls md:whitespace-nowrap">5+</h2>
+                <h2 className="value text-blue-800 font-bold text-xl lg:text-2xls md:whitespace-nowrap">5+</h2>
                 <h4 className='font-semibold text-lg'>Awards & Recognition</h4>
             </div>
         

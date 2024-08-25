@@ -2,7 +2,7 @@ import React from 'react';
 
 const GoogleMap = () => {
   return (
-    <div style={{ width: '100%', height: '500px' }} className='mt-8 border-none'>
+    <div style={{ width: '100%', height: '500px' }} className='mt-8 border-none' data-aos="fade-up"  data-aos-duration="8000">
       <iframe
         title="Makalu English Boarding School"
         width="100%"

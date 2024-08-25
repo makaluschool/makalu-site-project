@@ -8,7 +8,6 @@ export default async function page() {
   const getEventsData = await axios.get("http://localhost:1337/api/upcoming-events");
   //arrange data by date and time
   const data = getEventsData.data.data.sort((a: any, b: any) => {
-    console.log(new Date(a.attributes.Event_date).getTime()- new Date(b.attributes.Event_date).getTime());
     return new Date(a.attributes.Event_date).getTime() - new Date(b.attributes.Event_date).getTime();
   });
 
@@ -23,7 +22,7 @@ export default async function page() {
         const totime = FormatTime(d.attributes.To_event_time);
         return (
           <div
-          data-aos="fade-up"
+          data-aos="fade-up"  data-aos-duration={`${(10000-index*1000)}`}
             key={index}
             className="hover:text-yellow-500 cursor-pointer p-5 mb-5 bg-white rounded-md"
           >
