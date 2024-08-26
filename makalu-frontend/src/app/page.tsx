@@ -17,9 +17,9 @@ export default async function Home() {
     <div className=" ">
       <Banner data={getBannerData.data.data} />
       <NumberBanner />
+      <Aboutus />
       <CommunityBlogs data={getCommunityblogData.data.data} />
       <UpcomingEvents data={getEventsData.data.data} />
-      <Aboutus />
       <MessageCarosel />
       <FAQ  />
     </div>

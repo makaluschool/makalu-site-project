@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const UpcomingEvents = ({data}:any) => {
   return (
-    <div className="bg-gray-100 p-10 m-5 mt-10 rounded-lg">
+    <div className="bg-blue-50 p-10 m-5 mt-10 rounded-lg">
       <div className="">
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
