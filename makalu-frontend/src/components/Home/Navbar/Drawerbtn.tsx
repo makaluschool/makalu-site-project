@@ -70,11 +70,7 @@ const Drawerbtn = () => {
                   About Us
                 </h1>
               </Link>
-              <Link href={"/admission"} className="">
-                <h1 className="text-xl   hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2">
-                  Admission
-                </h1>
-              </Link>
+             
               <Link href="/events">
                 <h1 className="text-xl   hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2">
                   Events
