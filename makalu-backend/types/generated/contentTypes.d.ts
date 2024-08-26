@@ -828,12 +828,14 @@ export interface ApiGalleryGallery extends Schema.CollectionType {
     singularName: 'gallery';
     pluralName: 'galleries';
     displayName: 'Gallery';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     gallery_images: Attribute.Media;
+    Title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
