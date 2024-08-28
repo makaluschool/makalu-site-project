@@ -21,7 +21,7 @@ function FAQ() {
         <div className="basis-1/2 w-full">
           <Accordion type="single" collapsible className="w-full ">
             {FAQData.map((data, index) => (
-                     <AccordionItem value={`item-${index}`} className="" data-aos="fade-up"  data-aos-duration={`${(10000-index*1000)}`}>
+                     <AccordionItem key={index} value={`item-${index}`} className="" data-aos="fade-up"  data-aos-duration={`${(10000-index*1000)}`}>
                      <AccordionTrigger><h2 className=" text-left">{data.question}</h2></AccordionTrigger>
                      <AccordionContent>
                        {data.answer}

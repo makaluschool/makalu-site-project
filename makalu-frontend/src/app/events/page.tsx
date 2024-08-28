@@ -8,16 +8,22 @@ export default async function page() {
   const getEventsData = await axios.get("http://localhost:1337/api/upcoming-events");
   //arrange data by date and time
   const data = getEventsData.data.data.sort((a: any, b: any) => {
+    
     return new Date(a.attributes.Event_date).getTime() - new Date(b.attributes.Event_date).getTime();
   });
+  const formatedDate = (new Date().toLocaleDateString().replaceAll('/','-'))
+  const filterDataWithDate = data.filter((item:any,index:number)=>{
+    return item.Event_date > formatedDate
+  })
+   
 
   return (
     <div><PageBanner name='Events'/>
     <div className="container flex justify-center items-center" >
-      <h1 className=" text-gray-400 font-bold text-md">Total Events : {getEventsData.data.data.length}</h1>
+      <h1 className=" text-gray-400 font-bold text-md">Total Events : {filterDataWithDate.length}</h1>
     </div>
     <div className=" m-2 md:m-5 p-5 md:p-10 " >
-      {data.map((d: any, index: number) => {
+      {filterDataWithDate.map((d: any, index: number) => {
         const fromtime = FormatTime(d.attributes.From_event_time);
         const totime = FormatTime(d.attributes.To_event_time);
         return (

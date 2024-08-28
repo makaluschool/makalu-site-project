@@ -5,13 +5,18 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const UpcomingEvents = ({data}:any) => {
+  let formatedDate = new Date().toLocaleDateString().replaceAll("/","-")
+  
+  const filterDataWithDate = data.filter((item:any,index:number)=>{
+    return item.Event_date > new Date().toISOString()
+  })
   return (
     <div className="bg-blue-50 p-10 m-5 mt-10 rounded-lg">
       <div className="">
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
             <h1 className="font-[300]">
-             {data.length} UPCOMING <span className="font-bold text-blue-800">EVENTS</span>
+             {filterDataWithDate.length} UPCOMING <span className="font-bold text-blue-800">EVENTS</span>
             </h1>
             <span className="text-yellow-500 hidden sm:block self-center font-bold">
               <ChevronsDown fontFamily="600" fontSize={"1.5rem"} />

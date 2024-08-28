@@ -11,7 +11,7 @@ async function page({ params }: { params: { slug: string } }) {
   {data.map((d:any, index:number) => {
     const publishedAt = new Date(d.attributes.publishedAt)
   return(
-      <div className="max-w-3xl mx-auto mt-40">
+      <div className="max-w-3xl mx-auto mt-40" key={index}>
       <div className="py-8">
           <h1 className="text-3xl font-bold mb-2">{d.attributes.blog_title}</h1>
           <p className="text-gray-500 text-sm">Published on <time >{publishedAt.toLocaleDateString()}</time></p>

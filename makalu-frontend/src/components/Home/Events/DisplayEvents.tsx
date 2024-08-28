@@ -9,6 +9,7 @@ const DisplayEvents = ({ data }: any) => {
     (e: any, index: number) =>
       e.attributes.Event_date > new Date().toISOString() && index < 3
   );
+  
   if (data.length === 0)
     return <div className="bg-white m-5 p-10">No events</div>;
   return (
