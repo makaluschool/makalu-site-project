@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 const NumberBanner = () => {
   return (
     <div data-aos="fade-up" className='bg-blue-50 m-14 p-5 rounded-lg flex flex-col text-center mt-[1rem] md:mt-[-2rem] '>
