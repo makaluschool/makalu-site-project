@@ -3,7 +3,7 @@ import React from "react";
 
 const Message = ({ data }: any) => {
   return (
-    <div className="mt-5">
+    <div className="">
       <div className="heading flex flex-col justify-center text-center ">
         <h4 className="text-blue-800 font-bold " data-aos="fade-up">What our Leaders Say</h4>
         <div className="flex justify-center" data-aos="fade-up">
@@ -18,7 +18,7 @@ const Message = ({ data }: any) => {
         </p>
         <footer className="flex flex-col gap-6 mt-6 md:mt-12 ml-10" data-aos="fade-left">
           <Image
-            className="flex-shrink-0  border shadow-md rounded-md w-52  border-black/10 object-contain"
+            className="flex-shrink-0  border shadow-md rounded-md w-52  border-black/10 "
             src={data.image}
             alt="Sebastiaan Kloos"
             width={200}

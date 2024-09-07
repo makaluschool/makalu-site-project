@@ -17,7 +17,7 @@ export function MessageCarosel() {
             <CarouselItem key={index}>
               <div className="p-1">
                 <Card>
-                  <CardContent className="p-10 mt-10">
+                  <CardContent className="p-5 mt-10">
                     <Message data={data} />
                   </CardContent>
                 </Card>

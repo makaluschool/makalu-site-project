@@ -21,7 +21,7 @@ const Blogpostdata = ({ data }: any) => {
               />
 
               <div className="flex flex-col justify-beetween gap-3 px-4 py-2 ">
-                <div className="flex justify-center items-center text-xl font-semibold text-black hover:text-blue-800 two-lines ">
+                <div className="flex text-xl font-semibold text-black hover:text-blue-800 two-lines ">
                   <small className="font-bold text-xl ">
                     {data.blog_title}
                   </small>

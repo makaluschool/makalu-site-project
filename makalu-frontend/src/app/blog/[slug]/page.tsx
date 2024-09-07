@@ -1,6 +1,4 @@
-import { url } from "@/lib/api";
 import { blogDetailsData } from "@/lib/request";
-import axios from "axios";
 import Image from "next/image";
 import React from "react";
 
@@ -18,7 +16,7 @@ async function page({ params }: { params: { slug: string } }) {
           <p className="text-gray-500 text-sm">Published on <time >{publishedAt.toLocaleDateString()}</time></p>
       </div>
 
-      <Image src={`${d.attributes.blog_cover_image.data.attributes.url}`} alt="Featured image" className="mb-8 " width={1000} height={800} objectFit="cover"/>
+      <Image src={`${d.attributes.blog_cover_image.data.attributes.url}`} alt="Featured image" className="mb-8 object-cover" width={1000} height={800} />
 
       <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
           {d.attributes.blog_content}

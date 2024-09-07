@@ -12,7 +12,7 @@ export default async function Home() {
   const getCommunityblogData = await blogData();
   const getEventsData = await eventsData();
   return (
-    <div className=" ">
+    <div className="m-5 ">
       <Banner data={getBannerData.data.data} />
       <NumberBanner />
       <Aboutus />

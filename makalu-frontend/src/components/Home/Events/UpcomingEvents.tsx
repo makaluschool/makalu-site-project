@@ -6,10 +6,13 @@ import Link from "next/link";
 
 const UpcomingEvents = ({ data }: any) => {
   const filterDataWithDate = data.filter((item: any, index: number) => {
-    return item.Event_date > new Date().toISOString();
+    const formatedDate = new Date();
+    const eventDate = new Date(item.attributes.Event_date); // Convert Event_date to Date object
+    return eventDate > formatedDate;
   });
+  
   return (
-    <div className="bg-blue-50 p-10 m-5 mt-10 rounded-lg">
+    <div className="bg-blue-50 p-10 m-16 mt-10 rounded-lg">
       <div className="">
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">
@@ -17,8 +20,8 @@ const UpcomingEvents = ({ data }: any) => {
               {filterDataWithDate.length} UPCOMING{" "}
               <span className="font-bold text-blue-800">EVENTS</span>
             </h1>
-            <span className="text-yellow-500 hidden sm:block self-center font-bold">
-              <ChevronsDown fontFamily="600" fontSize={"1.5rem"} />
+            <span className="text-yellow-400 hidden sm:block self-center font-bold">
+              <ChevronsDown fontFamily="600" fontSize={"2rem"} />
             </span>
           </div>
           <div className="viewallbtn transform transition duration-300 ease-in-out scale-100 active:scale-95">

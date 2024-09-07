@@ -30,8 +30,7 @@ export function Banner(data: any) {
                   alt="banner"
                   width={1820}
                   height={700}
-                  className=""
-                  objectFit="contain"
+                  className="object-contain"
                 />
               </div>
             </CarouselItem>

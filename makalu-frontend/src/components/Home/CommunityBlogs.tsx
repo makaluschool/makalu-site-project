@@ -12,7 +12,7 @@ const CommunityBlogs = ({ data }: any) => {
         >
           <h2 className="font-bold text-3xl w-36  shadow-md p-5 sm:whitespace-nowrap rounded-lg m-10">
             Our
-            <span className="bg-blue-800 rounded-md text-white sm:p-2">
+            <span className="bg-blue-700 rounded-md text-white sm:p-2 ml-2">
               Community
             </span>
           </h2>
@@ -21,7 +21,7 @@ const CommunityBlogs = ({ data }: any) => {
           <div className="w-full dark:bg-gray-800 flex ">
             <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-8">
               <div className="mx-auto max-w-xl text-center" data-aos="fade-up">
-                <h2 className="text-xl p-2 font-bold tracking-tight  sm:text-4xl  rounded-lg px text-blue-800 ">
+                <h2 className="text-xl p-2 font-bold tracking-tight  sm:text-4xl  rounded-lg px text-blue-700 ">
                   <span className="font-[300] px-2 text-black">From the</span>
                   School Blog
                 </h2>

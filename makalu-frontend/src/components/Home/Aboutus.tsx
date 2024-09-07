@@ -13,7 +13,7 @@ const Aboutus = () => {
             <div className="max-w-lg" data-aos="fade-up">
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 About
-                <span className="bg-blue-800 text-white pl-1 pr-1 rounded-sm">
+                <span className="bg-blue-700 text-white pl-2 pr-2 ml-2 rounded-sm">
                   Makalu School
                 </span>
               </h2>
@@ -30,7 +30,7 @@ const Aboutus = () => {
                   href="/about"
                   className="text-blue-500 hover:text-blue-600 font-medium"
                 >
-                  <Button className="bg-blue-800 hover:bg-blue-600">
+                  <Button className="bg-blue-700 hover:bg-blue-600">
                     Learn more about us<span className="ml-2">&#8594;</span>
                   </Button>
                 </Link>
@@ -38,10 +38,10 @@ const Aboutus = () => {
             </div>
             <div className="mt-12 md:mt-0" data-aos="zoom-in">
               <Image
-                src={``}
+                src={`https://zkmzivycmmcvpqhkdoan.supabase.co/storage/v1/object/public/supabase/files/WhatsApp Image 2024-06-11 at 21.31.29_9c5bea10.jpg-2ca4c6bdb500ce851dbd5eee4d339f35.jpg`}
                 alt="About Us Image"
                 className="object-cover rounded-lg shadow-md"
-                width={500}
+                width={800}
                 height={500}
               />
             </div>
