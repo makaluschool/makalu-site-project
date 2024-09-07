@@ -1,12 +1,12 @@
 import Titlegallery from '@/components/Gallery/Titlegallery'
 import PageBanner from '@/components/PageBanner'
-import axios from 'axios'
+import { url } from '@/lib/api'
+import { getImages,  titleImagesRequest } from '@/lib/request'
 import React from 'react'
 
 const page = async() => {
-    const getImages = await axios("http://localhost:1337/api/galleries?filters[Title][$eq]=gallery&populate=*")
-    const images = getImages.data.data[0].attributes.gallery_images.data
-   const titleImages = await axios("http://localhost:1337/api/galleries?filters[Title][$not]=gallery")
+    const titleImages = await titleImagesRequest();
+    const images = await getImages();
   return (
     <div className="container">
       <PageBanner name='Gallery'/>
@@ -23,7 +23,7 @@ const page = async() => {
         {images.map((src:any, index:number) => (
           <div key={index} className="overflow-hidden mb-4  rounded-lg" data-aos="fade-up"  data-aos-duration={`${(10000-index*1000)}`} >
             <img
-              src={`http://localhost:1337${src.attributes.url}`}
+              src={`${url}${src.attributes.url}`}
               alt={`Gallery Image ${index + 1}`}
               className="w-full h-60 object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               

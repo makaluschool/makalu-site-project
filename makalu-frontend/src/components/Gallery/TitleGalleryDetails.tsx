@@ -1,3 +1,4 @@
+import { url } from '@/lib/api'
 import React from 'react'
 
 export default function TitleGalleryDetails({data}:{data:any}) {
@@ -6,7 +7,7 @@ export default function TitleGalleryDetails({data}:{data:any}) {
         {data.map((item:any,index:number)=>{
             return(
                 <div key={index} className="overflow-hidden mb-4  rounded-lg">
-                    <img src={`http://localhost:1337${item.attributes.url}`} alt={`Gallery Image ${index + 1}`} className="w-full h-60 object-cover transition-transform duration-300 ease-in-out transform hover:scale-105" />
+                    <img src={`${url}${item.attributes.url}`} alt={`Gallery Image ${index + 1}`} className="w-full h-60 object-cover transition-transform duration-300 ease-in-out transform hover:scale-105" />
                 </div>
             )
         })}

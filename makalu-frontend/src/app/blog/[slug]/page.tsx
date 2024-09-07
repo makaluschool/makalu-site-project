@@ -1,11 +1,10 @@
+import { blogDetailsData } from "@/lib/request";
 import axios from "axios";
 import React from "react";
 
 async function page({ params }: { params: { slug: string } }) {
- 
   const blogTitle = decodeURIComponent(params.slug)
-  const blogDataDetails = await axios.get(`http://localhost:1337/api/community-blogs?filters[blog_title][$eq]=${blogTitle}&populate=*`)
-  const data = (blogDataDetails.data.data)
+  const data = await blogDetailsData({blogTitle: blogTitle})
   return (
 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   {data.map((d:any, index:number) => {

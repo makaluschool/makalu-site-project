@@ -1,4 +1,5 @@
 "use client"
+import { url } from '@/lib/api';
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -14,7 +15,7 @@ const ContactForm = () => {
     return alert("please fill the form completely")
    }
     try {
-      const response = await fetch('http://localhost:1337/api/contact', {
+      const response = await fetch(`${url}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

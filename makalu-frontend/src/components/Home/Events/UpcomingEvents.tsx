@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const UpcomingEvents = ({ data }: any) => {
-  let formatedDate = new Date().toLocaleDateString().replaceAll("/", "-");
   const filterDataWithDate = data.filter((item: any, index: number) => {
     return item.Event_date > new Date().toISOString();
   });

@@ -1,4 +1,3 @@
-import { MailIcon, MapPin, PhoneIcon } from "lucide-react";
 import React from "react";
 
 const Toptipnav = () => {

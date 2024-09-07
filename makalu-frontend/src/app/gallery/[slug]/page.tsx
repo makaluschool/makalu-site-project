@@ -1,12 +1,11 @@
 import TitleGalleryDetails from '@/components/Gallery/TitleGalleryDetails'
 import PageBanner from '@/components/PageBanner'
-import axios from 'axios'
+import {  galleryDetailsData } from '@/lib/request'
 import React from 'react'
 
 export  default async function page({ params }: { params: { slug: string } }) {
     const imgTitle = decodeURIComponent(params.slug)
-  const blogDataDetails = await axios.get(`http://localhost:1337/api/galleries?filters[Title][$eq]=${imgTitle}&populate=*`)
-  const data = (blogDataDetails.data.data)
+    const data = await galleryDetailsData({imgTitle: imgTitle})
   return (
     <div><PageBanner name={`${imgTitle}`}/>
     <div className="container">

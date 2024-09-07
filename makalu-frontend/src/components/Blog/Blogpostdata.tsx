@@ -1,4 +1,5 @@
 "use client";
+import { url } from "@/lib/api";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +13,7 @@ const Blogpostdata = ({ data }: any) => {
             <li className="relative bg-white flex flex-col justify-between  h-[26rem] p-1  rounded shadow-md hover:shadow-blue-100 hover:cursor-pointer  ">
               <img
                 className="rounded relative w-full object-cover aspect-video"
-                src={`http://localhost:1337${data.blog_thumbnail.data.attributes.url}`}
+                src={`${url}${data.blog_thumbnail.data.attributes.url}`}
                 alt="Writey A.I"
                 loading="lazy"
               />

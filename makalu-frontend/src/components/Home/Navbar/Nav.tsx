@@ -1,8 +1,6 @@
 "use client";
-import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import Drawerbtn from "./Drawerbtn";
-import { user } from "@/types/global";
 import { useEffect, useState } from "react";
 import Toptipnav from "./Toptipnav";
 

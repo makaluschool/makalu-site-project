@@ -1,11 +1,12 @@
 import PageBanner from '@/components/PageBanner';
 import { FormatTime } from '@/Helpers/FormatTime';
+import { eventsData } from '@/lib/request';
 import axios from 'axios';
 import { Clock10Icon } from 'lucide-react';
 import React from 'react'
 
 export default async function page() {
-  const getEventsData = await axios.get("http://localhost:1337/api/upcoming-events");
+  const getEventsData = await eventsData()
   //arrange data by date and time
   const data = getEventsData.data.data.sort((a: any, b: any) => {
     
