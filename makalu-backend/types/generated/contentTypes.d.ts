@@ -802,8 +802,8 @@ export interface ApiCommunityBlogCommunityBlog extends Schema.CollectionType {
   attributes: {
     blog_thumbnail: Attribute.Media;
     blog_title: Attribute.String;
-    blog_content: Attribute.Text;
     blog_cover_image: Attribute.Media;
+    blog_content: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

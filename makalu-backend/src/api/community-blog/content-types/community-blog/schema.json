@@ -26,9 +26,6 @@
     "blog_title": {
       "type": "string"
     },
-    "blog_content": {
-      "type": "text"
-    },
     "blog_cover_image": {
       "type": "media",
       "multiple": false,
@@ -39,6 +36,9 @@
         "videos",
         "audios"
       ]
+    },
+    "blog_content": {
+      "type": "richtext"
     }
   }
 }
