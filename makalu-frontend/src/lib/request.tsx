@@ -23,7 +23,7 @@ async function eventsData() {
 
 async function getImages() {
   const getImages = await axios(galleryApi);
-  const images = getImages.data.data[1].attributes.gallery_images.data;
+  const images = getImages.data.data[0].attributes.gallery_images.data;
   return images;
 }
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Drawerbtn from "./Drawerbtn";
 import { useEffect, useState } from "react";
 import Toptipnav from "./Toptipnav";
+import Image from "next/image";
 
 const Nav = () => {
   /*  const [user, setuser] = useState<user>({name:"sohan"});
@@ -32,10 +33,12 @@ const Nav = () => {
       <div className=" max-w-7xl mx-auto px-4 sm:px-6 p-5 lg:px-8 md:p-5">
         <div className="flex justify-between ">
           <Link href={"/"} className="flex items-center">
-            <img
+            <Image
               className="h-8 sm:h-8 lg:h-12 w-auto"
               src="/images/makalu-logo.jpg"
               alt="Makalu Logo"
+              width={100}
+              height={100}
             />
             <span className="font-bold text-md text-blue-800 ml-2 md:text-lg lg:text-2xl ">
               Makalu English Boarding School

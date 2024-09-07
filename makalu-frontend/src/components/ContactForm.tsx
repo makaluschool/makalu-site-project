@@ -37,19 +37,19 @@ const ContactForm = () => {
 
   return (
     <form className="max-w-2xl mx-auto mt-8 space-y-8" onSubmit={handleSubmit}>
-          <div data-aos="fade-up"  data-aos-duration="8000">
+          <div >
             <label htmlFor="name" className="block text-gray-700 font-bold">Name</label>
             <input type="text" id="name" className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition" value={formData.name} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setFormData({...formData,name:e.target.value})} />
           </div>
-          <div data-aos="fade-up"  data-aos-duration="6000">
+          <div >
             <label htmlFor="email" className="block text-gray-700 font-bold">Email</label>
             <input type="email" id="email" className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition" value={formData.email} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setFormData({...formData,email:e.target.value})} />
           </div>
-          <div data-aos="fade-up"  data-aos-duration="2000">
+          <div >
             <label htmlFor="message" className="block text-gray-700 font-bold">Message</label>
             <textarea id="message" className="w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition"value={formData.message} onChange={(e:React.ChangeEvent<HTMLTextAreaElement>)=>setFormData({...formData,message:e.target.value})}></textarea>
           </div>
-          <button type="submit" className="w-full bg-blue-700 text-white py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors"data-aos="fade-up"  data-aos-duration="3000">Send Message</button>
+          <button type="submit" className="w-full bg-blue-700 text-white py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-colors">Send Message</button>
         </form>
   );
 };

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,8 +8,10 @@ const Footer = () => {
     <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
       <div className="sm:col-span-2">
       <Link href={"/"} className="flex items-center">
-            <img
+            <Image
               className="h-8 sm:h-8 lg:h-12 w-auto"
+              width={100}
+              height={100}
               src="/images/makalu-logo.jpg"
               alt="Makalu Logo"
             />
@@ -71,7 +74,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="mt-4 text-sm text-gray-500">
-          More connect to Makalu School through it's social handle.
+          More connect to Makalu School through its social handle.
         </p>
       </div>
     </div>

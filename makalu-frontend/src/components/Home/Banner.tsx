@@ -9,10 +9,9 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { url } from "@/lib/api";
 
 export function Banner(data: any) {
-  const plugin = React.useRef(
+  const plugin =React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
@@ -27,7 +26,7 @@ export function Banner(data: any) {
             <CarouselItem key={index}>
               <div className=" mt-10 flex justify-center ">
                 <Image
-                  src={`${url}${d.attributes.Banner_image.data[0].attributes.url}`}
+                  src={`${d.attributes.Banner_image.data[0].attributes.url}`}
                   alt="banner"
                   width={1820}
                   height={700}

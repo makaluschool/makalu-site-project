@@ -1,4 +1,5 @@
 import { url } from '@/lib/api'
+import Image from 'next/image'
 import React from 'react'
 
 export default function TitleGalleryDetails({data}:{data:any}) {
@@ -7,7 +8,7 @@ export default function TitleGalleryDetails({data}:{data:any}) {
         {data.map((item:any,index:number)=>{
             return(
                 <div key={index} className="overflow-hidden mb-4  rounded-lg">
-                    <img src={`${url}${item.attributes.url}`} alt={`Gallery Image ${index + 1}`} className="w-full h-60 object-cover transition-transform duration-300 ease-in-out transform hover:scale-105" />
+                    <Image src={`${item.attributes.url}`} alt={`Gallery Image ${index + 1}`} className="transition-transform duration-300 ease-in-out transform hover:scale-105" width={300} height={200} />
                 </div>
             )
         })}

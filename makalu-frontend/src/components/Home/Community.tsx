@@ -1,5 +1,6 @@
 "use client";
 import { url } from "@/lib/api";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -21,10 +22,12 @@ const Community = ({ data,index }: any) => {
     <div data-aos={animateBlog[index]} className="div">
     <div  className="transform transition duration-500 hover:scale-105  lg:w-[21rem] lg:ml-[3rem] ">
       <article className=" relative isolate flex flex-col justify-end overflow-hidden rounded-3xl  bg-gray-900 dark:bg-gray-700 px-6 py-6 pb-8 pt-80 sm:pt-48 lg:pt-80">
-        <img
-          src={`${url}${data.blog_thumbnail.data?.attributes.url}`}
+        <Image
+          src={`${data.blog_thumbnail.data?.attributes.url}`}
           alt="image"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
+          width={300}
+          height={200}
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
         <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
