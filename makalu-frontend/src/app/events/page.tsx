@@ -5,6 +5,8 @@ import axios from "axios";
 import { Clock10Icon } from "lucide-react";
 import React from "react";
 
+export const dynamic = 'force-dynamic';
+
 export default async function page() {
   const getEventsData = await eventsData();
   //arrange data by date and time

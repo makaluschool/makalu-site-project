@@ -3,6 +3,8 @@ import { blogData } from "@/lib/request";
 import axios from "axios";
 import React from "react";
 
+export const dynamic = 'force-dynamic';
+
 const page = async () => {
   const getCommunityblogData = await blogData();
   

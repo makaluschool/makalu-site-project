@@ -2,6 +2,8 @@ import { blogDetailsData } from "@/lib/request";
 import Image from "next/image";
 import React from "react";
 
+export const dynamic = 'force-dynamic';
+
 async function page({ params }: { params: { slug: string } }) {
   const blogTitle = decodeURIComponent(params.slug)
   const data = await blogDetailsData({blogTitle: blogTitle})

@@ -7,6 +7,7 @@ import { MessageCarosel } from "@/components/Home/Message/MessageCarosel";
 import NumberBanner from "@/components/Home/NumberBanner";
 import { bannerData, blogData, eventsData } from "@/lib/request";
 
+export const dynamic = 'force-dynamic';
 export default async function Home() {
   const getBannerData = await bannerData();
   const getCommunityblogData = await blogData();

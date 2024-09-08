@@ -3,6 +3,8 @@ import PageBanner from '@/components/PageBanner'
 import {  galleryDetailsData } from '@/lib/request'
 import React from 'react'
 
+export const dynamic = 'force-dynamic';
+
 export  default async function page({ params }: { params: { slug: string } }) {
     const imgTitle = decodeURIComponent(params.slug)
     const data = await galleryDetailsData({imgTitle: imgTitle})
