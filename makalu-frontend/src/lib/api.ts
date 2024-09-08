@@ -1,4 +1,4 @@
-export let url = "http://localhost:1337/api";
+export let url = process.env.API_URL;
 
 export const bannerApi = `${url}/home-banners?populate[0]=Banner_image`
 export const blogApi = `${url}/community-blogs?populate[0]=blog_thumbnail&populate[1]=blog_cover_image`
