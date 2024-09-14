@@ -12,7 +12,7 @@ const UpcomingEvents = ({ data }: any) => {
   });
   
   return (
-    <div className="bg-blue-50 p-10 m-16 mt-10 rounded-lg">
+    <div className="bg-blue-50 p-10 md:m-16 mt-10 rounded-lg">
       <div className="">
         <div className="titile sm:flex justify-between ">
           <div className="div text-3xl max-w-96 flex gap-3">

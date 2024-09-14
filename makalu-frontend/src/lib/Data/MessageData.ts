@@ -17,7 +17,7 @@ export const MessageData = [
     },
     {
         id: 3,
-        name: "keesab poudel",
+        name: "Keshab Poudel",
         knownAs: "Teacher of Makalu English Boarding School",
         message: "As a teacher at Makalu English Boarding School, I'm proud of our commitment to creating a supportive and engaging learning environment for our students. We work together to ensure that every child receives the attention and resources they need to grow academically and personally. It's a joy to be part of a team that truly cares about the future of our students.",
         image:"https://zkmzivycmmcvpqhkdoan.supabase.co/storage/v1/object/public/supabase/files/438146548_446443737952511_2931230590973116868_n.jpg-65da10bfdb5ae7c47315842be55dfb0f.jpg"
