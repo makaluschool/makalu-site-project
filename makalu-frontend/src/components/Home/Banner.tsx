@@ -11,26 +11,30 @@ import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
 
 export function Banner(data: any) {
-  const plugin =React.useRef(
+  const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
+
+  let dataArr = data?.data;
+
   return (
-    <div className="flex justify-center w-full z-50 mt-20">
+    <div className="flex justify-center w-full z-50 mt-28">
       <Carousel
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
-          {data?.data.map((d: any, index: number) => (
+          {dataArr.map((d: any, index: number) => (
             <CarouselItem key={index}>
               <div className=" mt-10 flex justify-center ">
                 <Image
-                  src={`${d.attributes.Banner_image.data[0].attributes.url}`}
+                  src={`${d.attributes.Banner_image.data.attributes.url}`}
                   alt="banner"
                   width={1820}
                   height={700}
                   className="object-contain"
+                  priority
                 />
               </div>
             </CarouselItem>
