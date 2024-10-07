@@ -7,12 +7,12 @@ const CommunityBlogs = ({ data }: any) => {
     <div>
       <div className="sm:m-10 sm:p-10">
         <div
-          className="title flex justify-center sm:ml-[-7rem]"
+          className="title flex justify-center sm:ml-[-7rem] mr-20"
           data-aos="fade-up"
         >
           <h2 className="font-bold text-3xl w-36  shadow-md p-5 sm:whitespace-nowrap rounded-lg m-10">
             Our
-            <span className="bg-blue-700 rounded-md text-white sm:p-2 ml-2">
+            <span className="bg-blue-700 rounded-md text-white sm:p-2 ml-2 p-2">
               Community
             </span>
           </h2>

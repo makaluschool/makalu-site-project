@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-50 pb-5">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
@@ -74,16 +74,26 @@ const Footer = () => {
               Social
             </span>
             <div className="flex items-center mt-1 space-x-3">
-              {/* <a
-                href="/"
-                className="text-gray-500 transition-colors duration-300 hover:text-blue-400"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
-                  <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"></path>
-                </svg>
-              </a> */}
               <a
-                href="/"
+            href="https://www.tiktok.com/@makaluschool?_t=8qI8p5wkElU&_r=1"
+            className="text-gray-500 transition-colors duration-300 hover:text-red-800 flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="28"
+              height="28"
+              viewBox="0 0 30 30"
+            >
+              <path
+                fill="currentColor"
+                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.104,4,24,4z M22.689,13.474 c-0.13,0.012-0.261,0.02-0.393,0.02c-1.495,0-2.809-0.768-3.574-1.931c0,3.049,0,6.519,0,6.577c0,2.685-2.177,4.861-4.861,4.861 C11.177,23,9,20.823,9,18.139c0-2.685,2.177-4.861,4.861-4.861c0.102,0,0.201,0.009,0.3,0.015v2.396c-0.1-0.012-0.197-0.03-0.3-0.03 c-1.37,0-2.481,1.111-2.481,2.481s1.11,2.481,2.481,2.481c1.371,0,2.581-1.08,2.581-2.45c0-0.055,0.024-11.17,0.024-11.17h2.289 c0.215,2.047,1.868,3.663,3.934,3.811V13.474z"
+              ></path>
+            </svg>
+          </a>
+              <a
+                href="https://www.instagram.com/makaluenglishboarding/"
                 className="text-gray-500 transition-colors duration-300 hover:text-orange-400"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -106,13 +116,13 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-          <p className="text-sm text-gray-600">
+        <div className="flex flex-col-reverse justify-between pt-5  border-t lg:flex-row rounded-xl shadow-lg m-5 pb-5  pl-5 pr-5">
+          <p className="text-md  font-bold">
             © Copyright 2024 Makalu.edu. All rights reserved.
           </p>
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
-              <p className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+              <p className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 text-md  font-bold">
                 Made by: sohancwactfw@gmail.com & keeshabpoudel322@gmail.com
               </p>
             </li>

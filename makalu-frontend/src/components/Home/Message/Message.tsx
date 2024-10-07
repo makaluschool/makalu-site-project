@@ -12,8 +12,8 @@ const Message = ({ data }: any) => {
           </h2>
         </div>
       </div>
-      <div className="flex flex-row justify-end items-center p-6 mt-10">
-        <p className="max-w-2xl text-xl font-medium text-center md:text-xl lg:text-lg" data-aos="fade-right">
+      <div className="sm:flex sm:flex-row sm:justify-end sm:items-center p-6 mt-10">
+        <p className="max-w-2xl sm:text-xl font-medium sm:text-center md:text-xl lg:text-lg" data-aos="fade-right">
           {data.message}
         </p>
         <footer className="flex flex-col gap-6 mt-6 md:mt-12 ml-10" data-aos="fade-left">

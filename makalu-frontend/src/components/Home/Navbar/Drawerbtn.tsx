@@ -77,11 +77,7 @@ const Drawerbtn = () => {
                   Events
                 </h1>
               </Link>
-              <Link href={"/staffs"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Faculty and Staff
-                </h1>
-              </Link>
+              
              
             </div>
           </div>
