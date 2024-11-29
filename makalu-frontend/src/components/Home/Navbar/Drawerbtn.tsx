@@ -33,7 +33,6 @@ const Drawerbtn = () => {
           className={`fixed right-0 top-0 h-full w-full md:w-80 bg-white shadow-lg transform transition-transform duration-300 ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
-          
         >
           {/* Drawer Content */}
           <div className="p-4 h-full flex flex-col">
@@ -45,44 +44,38 @@ const Drawerbtn = () => {
             </button>
             <div className="mt-8 ">
               <div className="md:hidden">
-            <Link href={"/"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-              Home
-                </h1>
-              </Link>
-              <Link href={"/gallery"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Gallery
-                </h1>
-              </Link>
-              <Link href={"/blog"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Blogs
-                </h1>
-              </Link>
-              <Link href={"/contact"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Contact
-                </h1>
-              </Link>
+                <Link href={"/"} className="">
+                  <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                    Home
+                  </h1>
+                </Link>
+                <Link href={"/gallery"} className="">
+                  <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                    Gallery
+                  </h1>
+                </Link>
+                <Link href={"/blog"} className="">
+                  <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                    Blogs
+                  </h1>
+                </Link>
+                <Link href={"/contact"} className="">
+                  <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
+                    Contact
+                  </h1>
+                </Link>
               </div>
-            <Link href={"/about"} className="">
+              <Link href={"/about"} className="">
                 <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
                   About Us
                 </h1>
               </Link>
-             
+
               <Link href="/events">
                 <h1 className="text-xl   hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2">
                   Events
                 </h1>
               </Link>
-              <Link href={"/staffs"} className="">
-                <h1 className="text-xl hover:bg-slate-100 hover:text-blue-600 cursor-pointer p-5 rounded-sm m-2 ">
-                  Faculty and Staff
-                </h1>
-              </Link>
-             
             </div>
           </div>
         </div>
